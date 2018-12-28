@@ -26,6 +26,6 @@
     "require": {
         "verse/run" : "^0.0",
         "twig/twig": "^2.5",
-        "verse/statistic": "^0.0.1"
+        "verse/statistic": "^0.1"
     }
 }
