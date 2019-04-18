@@ -1,2 +1,5 @@
-# verse_example
-Example of site based on Verse Framework
+# Verse statistic exampe
+This stite - example implementation of verse/statistic library.
+
+## Live demo
+http://stats.vetermanve.com
