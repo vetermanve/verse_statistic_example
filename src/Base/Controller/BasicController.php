@@ -7,7 +7,7 @@ use Stats\Events;
 use Verse\Di\Env;
 use Verse\Run\Controller\BaseControllerProto;
 use Verse\Run\Util\Uuid;
-use Verse\Statistic\WriteClient\StatsClientInterface;
+use Verse\StatisticClient\StatsClientInterface;
 
 abstract class BasicController extends BaseControllerProto
 {

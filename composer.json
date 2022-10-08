@@ -24,8 +24,8 @@
         }
     ],
     "require": {
-        "verse/run" : "^0.0",
+        "verse/run" : "^1.0",
         "twig/twig": "^2.5",
-        "verse/statistic": "^0.1"
+        "verse/statistic": "^0.1.12"
     }
 }

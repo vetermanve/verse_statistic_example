@@ -5,10 +5,10 @@ namespace Stats\RunComponent;
 use Stats\StatsConfig;
 use Verse\Di\Env;
 use Verse\Run\Component\RunComponentProto;
-use Verse\Statistic\WriteClient\Encoder\JsonEncoder;
-use Verse\Statistic\WriteClient\Stats;
-use Verse\Statistic\WriteClient\StatsClientInterface;
-use Verse\Statistic\WriteClient\Transport\LocalFileTransport;
+use Verse\StatisticClient\Encoder\JsonEncoder;
+use Verse\StatisticClient\Stats;
+use Verse\StatisticClient\StatsClientInterface;
+use Verse\StatisticClient\Transport\LocalFileTransport;
 
 class StatsClientSetup extends RunComponentProto
 {

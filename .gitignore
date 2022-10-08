@@ -2,3 +2,4 @@
 vendor/
 stats-data/
 composer.lock
+.idea

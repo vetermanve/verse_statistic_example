@@ -56,14 +56,15 @@ class Stats extends BasicController
         $eventIds = array_map('crc32', $fields);
         
         $statsData = StatsConfig::getStatsStorage()->findRecords($eventIds, 0, time() + 3600 *24, TimeScale::HOUR, BasicGroping::TYPE, [], $this->_statsScopeId);
-        
+
         array_walk($statsData, function (&$rec) {
             ksort($rec);
             unset($rec['id']);
             $rec['date'] = date('c', $rec[StatRecord::TIME]);
         });
-        
-        $keys = array_keys(reset($statsData));
+
+        reset($statsData);
+        $keys = array_keys($statsData);
         
         $grouping = StatsConfig::getGroupingFactory()->getGroupingModelById(BasicGroping::TYPE);
         
